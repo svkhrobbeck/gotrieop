@@ -2,6 +2,14 @@
 .header {
   padding: 44px 0;
   margin-bottom: 42px;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 34px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 24px 0;
+  }
 }
 
 .header__container {
@@ -12,10 +20,56 @@
 
 .header__logo {
   margin-right: 25px;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-right: 20px;
+  }
+}
+
+.header__nav-open {
+  display: none;
+
+  @media only screen and (max-width: $tablet) {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    outline-color: #fff;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .header__nav {
   color: #fff;
+  margin-right: 25px;
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    margin-right: 0;
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #000;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 20px;
+  }
 }
 
 /* HEADER-ACTIONS */
@@ -23,12 +77,17 @@
   display: flex;
   align-items: center;
   color: #fff;
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .header__link {
   font-size: 15px;
   font-weight: 500;
   line-height: normal;
+  color: inherit;
 
   &:not(:last-child) {
     margin-right: 25px;

@@ -10,7 +10,7 @@
     <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
 
     <!-- slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" /> -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -28,8 +28,16 @@
             <img class="logo__img" src="images/logo.svg" alt="Gotrieop logo" width="93" height="23" />
           </a>
 
+          <!-- nav open -->
+          <button class="header__nav-open" data-nav-open="[data-header-nav]">
+            <img src="images/icon-menu.svg" alt="icon menu" width="24" height="24" />
+          </button>
+
           <!-- nav -->
-          <nav class="header__nav nav">
+          <nav class="header__nav header__nav--open nav" data-header-nav>
+            <button class="nav__close" data-nav-close="[data-header-nav]">
+              <img src="images/icon-close.svg" alt="icon close" width="24" height="24" />
+            </button>
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#">Home</a>
@@ -44,6 +52,10 @@
                 <a class="nav__link" href="#">Contact</a>
               </li>
             </ul>
+            <div class="nav__actions">
+              <a class="button nav__link" href="#">Sign up</a>
+              <a class="button button--primary nav__link" href="#">Login</a>
+            </div>
           </nav>
 
           <!-- actions -->
