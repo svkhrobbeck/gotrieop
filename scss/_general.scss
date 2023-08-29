@@ -78,6 +78,14 @@ body {
     border-radius: 100px;
   }
 
+  &--big-secondary {
+    background-image: var(--primary-gradient);
+    border-radius: 27px;
+    padding: 34px 87px;
+    color: #fefefe;
+    font-weight: 600;
+  }
+
   &--secondary {
     background-image: var(--primary-gradient);
     border-radius: 27px;

@@ -1,0 +1,36 @@
+.subscribe {
+  margin-bottom: 32px;
+}
+
+.subscribe__container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe__heading {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subscribe__form {
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 12px 15px 12px 45px;
+}
+
+.subscribe__input {
+  border: none;
+  background-color: transparent;
+  margin-right: 180px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--secondary-text-color);
+    opacity: 0.5;
+  }
+}
