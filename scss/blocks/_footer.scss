@@ -1,0 +1,30 @@
+.footer {
+  padding: 74px 0;
+  color: var(--secondary-text-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__actions {
+  display: flex;
+  align-items: center;
+}
+
+.footer__link {
+  font-size: 15px;
+  font-weight: 500;
+
+  &--signup {
+    opacity: 0.5;
+    color: var(--secondary-text-color);
+    margin-right: 66px;
+  }
+
+  &--login {
+    color: #fff;
+  }
+}
