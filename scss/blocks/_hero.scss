@@ -12,6 +12,27 @@
 
 .hero__content {
   max-width: 605px;
+  position: relative;
+  z-index: 3;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 520px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 380px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  @media only screen and (max-width: $mobile) {
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .hero__badge {
@@ -21,6 +42,13 @@
   background: rgba(255, 255, 255, 0.25);
   font-size: 18px;
   margin-bottom: 7px;
+
+  @media only screen and (max-width: $desktop) {
+    padding: 9px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
 }
 
 .hero__title {
@@ -30,28 +58,51 @@
   font-weight: 600;
   position: relative;
 
-    &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 180%;
-    display: inline-block;
-    width: 171px;
-    height: 51px;
-    background: url("../images/decor-waves.svg") no-repeat center / contain;
-  }
-
   &::after {
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: 100%;
     left: 100%;
+    top: 0;
+    transform: translateY(-100%);
     display: inline-block;
     width: 48px;
     height: 63px;
     background: url("../images/decor-dots.svg") no-repeat center / contain;
+
+    @media only screen and (max-width: $desktop) {
+      width: 35px;
+      height: 46px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      top: -30px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      left: auto;
+      right: -10px;
+    }
+  }
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 44px;
+    margin-bottom: 24px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 }
 
@@ -60,6 +111,29 @@
   margin-top: 0;
   margin-bottom: 68px;
   opacity: 0.5;
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 22px;
+    margin-bottom: 50px;
+    max-width: 420px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 18px;
+    margin-right: 0;
+    margin-bottom: 25px;
+    max-width: none;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
 
 .hero__btn::before {
@@ -67,16 +141,95 @@
   display: inline-block;
   position: absolute;
   z-index: 1;
-  bottom: 100px;
-  left: 50%;
+  left: 105%;
+  top: 105%;
   transform: translateX(30%);
   width: 171px;
   height: 51px;
   background: url("../images/decor-waves.svg") no-repeat center / contain;
+
+  @media only screen and (max-width: $desktop) {
+    width: 150px;
+    height: 45px;
+    top: 105%;
+    left: 30%;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    display: none;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    left: 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: 80px;
+    height: 24px;
+  }
 }
 
-.hero__image {
+.hero__image-wrapper {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  max-width: 581px;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 90px;
+    display: inline-block;
+    width: 171px;
+    height: 51px;
+    background: url("../images/decor-waves.svg") no-repeat center / contain;
+
+    @media only screen and (max-width: $desktop) {
+      width: 150px;
+      height: 45px;
+      right: 30px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    bottom: 17%;
+    display: inline-block;
+    width: 63px;
+    height: 83px;
+    background: url("../images/decor-dots.svg") no-repeat center / contain;
+
+    @media only screen and (max-width: $desktop) {
+      width: 35px;
+      height: 46px;
+      left: 30px;
+      bottom: 90px;
+    }
+  }
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 560px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 480px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.hero__image {
+  width: 100%;
 }
