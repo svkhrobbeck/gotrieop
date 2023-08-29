@@ -98,7 +98,8 @@ body {
   flex-direction: column;
   background-color: #1f5e37;
   background-image: var(--secondary-gradient);
-  height: 950px;
+  min-height: 950px;
+  margin-bottom: 115px;
 
   &::after {
     content: "";
