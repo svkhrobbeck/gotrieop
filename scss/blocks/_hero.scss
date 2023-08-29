@@ -1,0 +1,43 @@
+.hero {
+  color: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__container {
+  flex-grow: 1;
+  position: relative;
+}
+
+.hero__content {
+  max-width: 605px;
+}
+
+.hero__badge {
+  display: inline-block;
+  padding: 11px 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.hero__desc {
+  margin-top: 0;
+  margin-bottom: 68px;
+  opacity: 0.5;
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
