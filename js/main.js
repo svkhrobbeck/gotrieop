@@ -7,10 +7,19 @@ let splide = new Splide(".splide", {
   perPage: 3,
   type: "loop",
   focus: "left",
-  gap: 1,
+  gap: 0,
   padding: { left: 10, right: 20 },
   perMove: 1,
   autoplay: true,
+  breakpoints: {
+    800: {
+      perPage: 2,
+    },
+    640: {
+      perPage: 1,
+      focus: "center",
+    },
+  },
 });
 
 splide.mount();

@@ -2,6 +2,18 @@
   padding-bottom: 274px;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $desktop) {
+    padding-bottom: 230px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-bottom: 190px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 130px;
+  }
 }
 
 .promo__container {
@@ -10,6 +22,11 @@
 
 .promo__content {
   max-width: 456px;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: none;
+    text-align: center;
+  }
 }
 
 .promo__title {
@@ -18,6 +35,10 @@
   font-size: 55px;
   font-weight: 600;
   line-height: 1;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-bottom: 10px;
+  }
 }
 
 .promo__title-inner {
@@ -31,6 +52,24 @@
   margin-top: 0;
   margin-bottom: 60px;
   opacity: 0.5;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 25px;
+  }
+}
+
+.promo__slider {
+  @media only screen and (max-width: $tablet-l) {
+    margin-top: 80px;
+  }
 }
 
 .promo__splide {
@@ -38,6 +77,20 @@
   top: 0;
   right: -240px;
   max-width: 1110px;
+
+  @media only screen and (max-width: 1440px) {
+    max-width: $tablet-l;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 740px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: none;
+    width: 100%;
+    position: static;
+  }
 }
 
 .splide__slide {
@@ -58,6 +111,16 @@
       content: "";
       position: absolute;
       inset: 0;
+      background: url("../../images/arrow-left.svg") no-repeat center / contain;
+    }
+  }
+
+  &--next {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: rotate(180deg);
       background: url("../../images/arrow-left.svg") no-repeat center / contain;
     }
   }

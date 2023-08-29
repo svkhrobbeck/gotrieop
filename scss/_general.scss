@@ -48,6 +48,23 @@ body {
   &.body--hidden {
     overflow: hidden;
   }
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 22px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 /* VISUALLY HIDDEN */
@@ -125,6 +142,18 @@ body {
     font-weight: 600;
     padding: 25px 44px;
     border-radius: 27px;
+
+    @media only screen and (max-width: $tablet-l) {
+      padding: 21px 34px;
+      border-radius: 22px;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      padding: 18px 26px;
+      border-radius: 18px;
+      font-size: 16px;
+    }
   }
 
   &:hover {
@@ -312,17 +341,21 @@ body {
 
   @media only screen and (max-width: $desktop) {
     min-height: 900px;
+    margin-bottom: 90px;
   }
 
   @media only screen and (max-width: $tablet-l) {
     min-height: 830px;
+    margin-bottom: 60px;
   }
 
   @media only screen and (max-width: $tablet) {
     min-height: 570px;
+    margin-bottom: 40px;
   }
 
   @media only screen and (max-width: $mobile) {
     min-height: 470px;
+    margin-bottom: 25px;
   }
 }

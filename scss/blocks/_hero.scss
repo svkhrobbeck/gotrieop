@@ -113,25 +113,21 @@
   opacity: 0.5;
 
   @media only screen and (max-width: $desktop) {
-    font-size: 24px;
     margin-bottom: 54px;
   }
 
   @media only screen and (max-width: $tablet-l) {
-    font-size: 22px;
     margin-bottom: 50px;
     max-width: 420px;
   }
 
   @media only screen and (max-width: $tablet) {
-    font-size: 18px;
     margin-right: 0;
     margin-bottom: 25px;
     max-width: none;
   }
 
   @media only screen and (max-width: $tablet) {
-    font-size: 16px;
     margin-bottom: 15px;
   }
 }
