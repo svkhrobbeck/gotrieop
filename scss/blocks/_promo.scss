@@ -1,0 +1,60 @@
+.promo {
+  padding-bottom: 274px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo__container {
+  color: var(--secondary-text-color);
+}
+
+.promo__content {
+  max-width: 456px;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.promo__title-inner {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.promo__desc {
+  margin-top: 0;
+  margin-bottom: 60px;
+  opacity: 0.5;
+}
+
+.promo__splide {
+  position: absolute;
+  top: 0;
+  right: -240px;
+  max-width: 1110px;
+}
+
+.splide__slide {
+  transition: transform 0.2s ease;
+
+  &:not(.is-active) + & {
+    transform: scale(0.8);
+  }
+}
+
+.splide__arrow {
+  &--prev {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("../../images/arrow-left.svg") no-repeat center / contain;
+    }
+  }
+}

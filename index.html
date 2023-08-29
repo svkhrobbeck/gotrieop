@@ -9,9 +9,12 @@
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
 
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
@@ -59,7 +62,7 @@
             <span class="hero__badge"> exsplore the world </span>
             <h2 class="hero__title">Explore The Natural Beauty Of Halmahera With Us</h2>
             <p class="hero__desc">explore the beauty of god's earth in a beautiful forest and have fun</p>
-            <button class="button button--secondary">Exsplore Now</button>
+            <button class="hero__btn button button--secondary">Exsplore Now</button>
           </div>
           <img
             class="hero__image"
@@ -75,10 +78,59 @@
     <!-- /HEADER-HERO-WRAPPER -->
 
     <!-- MAIN CONTENT -->
-    <main class="main-content"></main>
+    <main class="main-content">
+      <!-- PROMO -->
+      <section class="promo">
+        <h2 class="visually-hidden">Promo</h2>
+        <div class="container promo__container">
+          <div class="promo__content">
+            <h3 class="promo__title"><span class="promo__title-inner">Choice Of</span><span>Destinations</span></h3>
+            <p class="promo__desc">explore the beauty of god's earth in a beautiful forest and have fun</p>
+            <button class="button button--small-secondary">Exsplore Now</button>
+          </div>
+          <div class="promo__slider">
+            <section class="promo__splide splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-splide-interval="2000">
+                    <img
+                      src="images/img-destion-1.jpg"
+                      alt="image 1"
+                      width="335"
+                      height="402"
+                      srcset="images/img-destion-1.jpg 1x, images/img-destion-1@2x.jpg 2x"
+                    />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="2000">
+                    <img
+                      src="images/img-destion-2.jpg"
+                      alt="image 2"
+                      width="335"
+                      height="402"
+                      srcset="images/img-destion-2.jpg 1x, images/img-destion-2.jpg 2x"
+                    />
+                  </li>
+                  <li class="splide__slide" data-splide-interval="2000">
+                    <img
+                      src="images/img-destion-1.jpg"
+                      alt="image 3"
+                      width="335"
+                      height="402"
+                      srcset="images/img-destion-1.jpg 1x, images/img-destion-1@2x.jpg 2x"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- /PROMO -->
+    </main>
     <!-- /MAIN CONTENT -->
 
-    <!-- SCRIPTS -->
-    <!-- <script src="js/main.js"></script> -->
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

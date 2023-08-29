@@ -69,6 +69,7 @@ body {
   white-space: nowrap;
   background-color: transparent;
   color: inherit;
+  transition: opacity var(--transition-duration) ease;
 
   &--primary {
     padding: 13px 44px;
@@ -93,6 +94,14 @@ body {
     padding: 25px 44px;
     border-radius: 27px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 /* MAIN CONTENT */
@@ -110,13 +119,27 @@ body {
   min-height: 950px;
   margin-bottom: 115px;
 
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(1050%);
+    width: 63px;
+    height: 83px;
+    background: url("../images/decor-dots.svg") no-repeat center / contain;
+  }
+
   &::after {
     content: "";
     position: absolute;
-    bottom: -3px;
+    z-index: 1;
+    bottom: -2px;
     left: 0;
     width: 100%;
-    height: 142px;
-    background: url("../images/hero-addon.svg") no-repeat bottom / 100% 142px;
+    height: 159px;
+    background: url("../images/hero-addon.svg") no-repeat bottom / 100% 159px;
   }
 }

@@ -28,12 +28,51 @@
   margin-bottom: 30px;
   font-size: 55px;
   font-weight: 600;
+  position: relative;
+
+    &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 180%;
+    display: inline-block;
+    width: 171px;
+    height: 51px;
+    background: url("../images/decor-waves.svg") no-repeat center / contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 100%;
+    display: inline-block;
+    width: 48px;
+    height: 63px;
+    background: url("../images/decor-dots.svg") no-repeat center / contain;
+  }
 }
 
 .hero__desc {
+  max-width: 520px;
   margin-top: 0;
   margin-bottom: 68px;
   opacity: 0.5;
+}
+
+.hero__btn::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(30%);
+  width: 171px;
+  height: 51px;
+  background: url("../images/decor-waves.svg") no-repeat center / contain;
 }
 
 .hero__image {
