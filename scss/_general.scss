@@ -84,6 +84,15 @@ body {
     color: #fefefe;
     font-weight: 600;
   }
+
+  &--small-secondary {
+    background-image: var(--primary-gradient);
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 44px;
+    border-radius: 27px;
+  }
 }
 
 /* MAIN CONTENT */
