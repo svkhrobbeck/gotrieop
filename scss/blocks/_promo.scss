@@ -46,6 +46,10 @@
   &:not(.is-active) + & {
     transform: scale(0.8);
   }
+
+  img {
+    border-radius: 35px;
+  }
 }
 
 .splide__arrow {
