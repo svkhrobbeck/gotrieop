@@ -1,0 +1,89 @@
+/* CUSTOM PROPS */
+:root {
+  --primary-bg-color: #f6f6f6;
+  --text-color: #000;
+  --secondary-text-color: #0f1f1c;
+  --primary-gradient: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%);
+  --transition-duration: 0.4s;
+}
+
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 2px dashed var(--text-color);
+  outline-offset: 3px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* VISUALLY HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  color: inherit;
+
+  &--primary {
+    padding: 13px 44px;
+    background-color: #ff7b4e;
+    background-image: var(--primary-gradient);
+    border-radius: 100px;
+  }
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+/* HEADER-HERO-WRAPPER */
+.header-hero-wrapper {
+  background: url("../images/hero-bg.svg") no-repeat top / 100% 950px;
+  height: 950px;
+}
