@@ -51,16 +51,14 @@
   margin-right: 25px;
 
   @media only screen and (max-width: $tablet) {
+    margin-right: 0;
     display: none;
-    height: 100vh;
+    min-height: 100%;
     background-color: #fff;
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     inset: 0;
     padding: 40px;
-    margin-right: 0;
 
     &--open {
       display: flex;
