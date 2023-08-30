@@ -112,6 +112,42 @@
   margin-bottom: 68px;
   opacity: 0.5;
 
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    left: 105%;
+    top: 105%;
+    transform: translateX(30%);
+    width: 171px;
+    height: 51px;
+    background: url("../images/decor-waves.svg") no-repeat center / contain;
+
+    @media only screen and (max-width: $desktop) {
+      width: 150px;
+      height: 45px;
+      top: 105%;
+      left: 30%;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      display: inline-block;
+      width: 120px;
+      height: 36px;
+      left: 0;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 80px;
+      height: 24px;
+    }
+  }
+
   @media only screen and (max-width: $desktop) {
     margin-bottom: 54px;
   }
@@ -129,42 +165,6 @@
 
   @media only screen and (max-width: $tablet) {
     margin-bottom: 15px;
-  }
-}
-
-.hero__btn::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  z-index: 1;
-  left: 105%;
-  top: 105%;
-  transform: translateX(30%);
-  width: 171px;
-  height: 51px;
-  background: url("../images/decor-waves.svg") no-repeat center / contain;
-
-  @media only screen and (max-width: $desktop) {
-    width: 150px;
-    height: 45px;
-    top: 105%;
-    left: 30%;
-  }
-
-  @media only screen and (max-width: $tablet-l) {
-    display: none;
-  }
-
-  @media only screen and (max-width: $tablet) {
-    display: inline-block;
-    width: 120px;
-    height: 36px;
-    left: 0;
-  }
-
-  @media only screen and (max-width: $mobile) {
-    width: 80px;
-    height: 24px;
   }
 }
 
