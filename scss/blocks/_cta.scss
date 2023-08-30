@@ -1,5 +1,21 @@
 .cta {
   margin-bottom: 135px;
+
+    @media only screen and (max-width: $desktop) {
+    margin-bottom: 115px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-bottom: 95px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 75px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 60px;
+  }
 }
 
 .cta__container {
@@ -21,6 +37,34 @@
     width: 63px;
     height: 83px;
     background: url("../images/decor-dots-pink.svg") no-repeat center / contain;
+
+    @media only screen and (max-width: $desktop) {
+      width: 54px;
+      height: 72px;
+      left: 63px;
+      bottom: 45px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      width: 45px;
+      height: 59px;
+      left: 50px;
+      bottom: 35px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      width: 36px;
+      height: 45px;
+      left: 30px;
+      bottom: 25px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 22px;
+      height: 29px;
+      left: 18px;
+      bottom: 14px;
+    }
   }
 
   &::after {
@@ -32,6 +76,56 @@
     height: 83px;
     background: url("../images/decor-dots-pink.svg") no-repeat center / contain;
     transform: rotate(180deg);
+
+    @media only screen and (max-width: $desktop) {
+      width: 54px;
+      height: 72px;
+      top: 45px;
+      right: 63px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      width: 45px;
+      height: 59px;
+      right: 50px;
+      top: 35px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      width: 36px;
+      height: 45px;
+      right: 30px;
+      top: 25px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: 22px;
+      height: 29px;
+      right: 18px;
+      top: 14px;
+    }
+  }
+
+  @media only screen and (max-width: $desktop) {
+    padding: 100px 0;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 80px 0;
+    border-radius: 40px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 65px 45px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 55px 40px;
+    border-radius: 25px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 45px 25px;
   }
 }
 
@@ -42,6 +136,26 @@
   font-size: 45px;
   font-weight: 500;
   line-height: normal;
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 39px;
+    margin-bottom: 25px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
 
 .cta__desc {
@@ -52,4 +166,24 @@
   font-weight: 400;
   line-height: normal;
   opacity: 0.5;
+
+  @media only screen and (max-width: $desktop) {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 22px;
+    margin-bottom: 42px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
 }

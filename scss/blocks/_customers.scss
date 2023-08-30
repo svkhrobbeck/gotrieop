@@ -1,6 +1,22 @@
 /* CUSTOMERS */
 .customers {
   margin-bottom: 233px;
+
+    @media only screen and (max-width: $desktop) {
+    margin-bottom: 200px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-bottom: 155px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    margin-bottom: 133px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-bottom: 100px;
+  }
 }
 
 .customers__container {
