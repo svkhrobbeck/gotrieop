@@ -73,6 +73,30 @@
   @media only screen and (max-width: $mobile) {
     padding: 20px;
   }
+
+  .nav__list {
+    @media only screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .nav__item {
+    @media only screen and (max-width: $tablet) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .nav__link {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 20px;
+    }
+  }
 }
 
 /* HEADER-ACTIONS */
