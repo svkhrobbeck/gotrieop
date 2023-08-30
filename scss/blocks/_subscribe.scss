@@ -67,6 +67,7 @@
     padding: 10px 12px;
     border-radius: 20px;
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -116,8 +117,16 @@
 
   @media only screen and (max-width: $mobile) {
     text-align: center;
+    flex-grow: 1;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 24px;
-    padding: 8px 0;
+    padding: 8px;
+  }
+}
+
+.subscribe__button {
+  @media only screen and (max-width: $mobile) {
+    width: 100%;
   }
 }
