@@ -113,6 +113,22 @@ body {
     padding: 34px 87px;
     color: #fefefe;
     font-weight: 600;
+    font-size: inherit;
+
+    @media only screen and (max-width: $tablet-l) {
+      padding: 28px 67px;
+      border-radius: 22px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      padding: 23px 45px;
+      border-radius: 19px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 16px 28px;
+      border-radius: 17px;
+    }
   }
 
   &--secondary {
@@ -121,17 +137,16 @@ body {
     padding: 27px 48px;
     color: #fefefe;
     font-weight: 600;
+    font-size: inherit;
 
     @media only screen and (max-width: $tablet-l) {
       padding: 23px 34px;
       border-radius: 22px;
-      font-size: 22px;
     }
 
     @media only screen and (max-width: $tablet) {
       padding: 19px 28px;
       border-radius: 19px;
-      font-size: 19px;
     }
   }
 
