@@ -1,17 +1,78 @@
 .footer {
   padding: 74px 0;
   color: var(--secondary-text-color);
+
+  @media only screen and (max-width: $desktop) {
+    padding: 56px 0;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 48px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 36px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 28px 0;
+  }
 }
 
 .footer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 22px;
+}
+
+.footer__nav {
+  @media only screen and (max-width: $mobile) {
+    order: 1;
+  }
+
+  @media only screen and (max-width: 380px) {
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .footer__actions {
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  @media only screen and (max-width: 380px) {
+    flex-direction: column;
+  }
 }
 
 .footer__link {
@@ -21,7 +82,28 @@
   &--signup {
     opacity: 0.5;
     color: var(--secondary-text-color);
-    margin-right: 66px;
+    margin-right: 65px;
+
+    @media only screen and (max-width: $desktop) {
+      margin-right: 55px;
+    }
+
+    @media only screen and (max-width: $tablet-l) {
+      margin-right: 45px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      margin-right: 35px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      margin-right: 30px;
+    }
+
+    @media only screen and (max-width: 380px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &--login {
