@@ -170,6 +170,7 @@
 
 .hero__image-wrapper {
   position: absolute;
+  user-select: none;
   bottom: 0;
   right: 0;
   display: flex;
@@ -224,6 +225,12 @@
   @media only screen and (max-width: $tablet) {
     display: none;
   }
+}
+
+.hero__image-wrapper-inner {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
 }
 
 .hero__image {
