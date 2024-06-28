@@ -1,5 +1,3 @@
-build/
-node_modules/
-public/
-package.json
+images/
+css/
 *.min.*

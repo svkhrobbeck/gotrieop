@@ -2,7 +2,7 @@
 .customers {
   margin-bottom: 233px;
 
-    @media only screen and (max-width: $desktop) {
+  @media only screen and (max-width: $desktop) {
     margin-bottom: 200px;
   }
 
@@ -65,12 +65,12 @@
     max-width: 524px;
   }
 
-   @media only screen and (max-width: $tablet) {
-   max-width: none;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  @media only screen and (max-width: $tablet) {
+    max-width: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
